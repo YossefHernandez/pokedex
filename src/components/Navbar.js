@@ -7,6 +7,9 @@ const Navbar = () => {
             <div>
                 <img src={imgPokeAPI} alt="pokeapi-logo" className="navbar-image"/>
             </div>
+            <div>
+                Here
+            </div>
         </nav>
     )
 }

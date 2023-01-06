@@ -1,9 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 
 const Searchbar = () => {
-    return(
-        <input placeholder="Search Pokemon"></input>
-    )
-}
+  const [search, setSearch] = useState("")
+  const onChange = (evt) => {
+    console.log(evt.target.value);
+    search = evt.target.value
+  };
+  return (
+    <div>
+      <div>
+        <input placeholder="Search Pokemon" onChange={onChange}></input>
+      </div>
+      <div>{search}</div>
+    </div>
+  );
+};
 
-export default Searchbar
+export default Searchbar;
